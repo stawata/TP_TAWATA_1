@@ -10,24 +10,33 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="container">
-                <a class="titulo" href="#">Vero</a>
-            </div>
+                <p class="titulo" href="#">Vero</p>
+                <div><button type="button" class="btn">REGISTRARSE</button></div>
+                <div><button type="button" class="btn">INICIAR SESION</button></div>
         </nav>
     </header>
+    <main>
+        <section>
+            <div class="googlemaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26264.912577580904!2d-58.39628255!3d-34.6265575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1693528184029!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section>
+            <div >        
+                <form action="/action_page.php">
+                <label for="fname">ubicacion:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <input type="submit" value="INGRESAR">
+              </form>
+            </div>
+        </section>
+        <section>   
+            <div><img src="./media/golf-driving-tips.jpg" alt="" id="imagen_3"></div>
+            <div><img src="./media/juan-lebron-ale-galan-padel.avif " alt="" id="imagen_4"></div>
+        </section>
+    
 
-    <section>
-        <div class="contenedor-1">
-            BUSCAS UN LUGAR PARA HACER DEPORTE
-        </div>  
-    </section>
-    <section>
-        <div><img src="./media/imagen_deportes.jpg" alt="" class="imagen-central"></div>
-        <div><img src="./media/futbol.jpg" alt="" class="imagenes"></div>
-        <div><img src="./media/golf-driving-tips.jpg" alt="" class="imagenes"></div>
-        <div><img src="./media/juan-lebron-ale-galan-padel.avif " alt="" class="imagenes"></div>
-    </section>
-
+    </main>
 
 </body>
 
