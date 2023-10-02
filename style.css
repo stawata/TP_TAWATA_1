@@ -2,72 +2,147 @@
 
 /*{border: 1px solid white;}*/
 
-body {background-color:#43c743; margin:0px}
-
-.btn{
-    background-color: #6bf170; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    height: 100%;
-}
-
-.botones_header{
-    margin-inline-start: auto;
-}
-
-.googlemaps{
-    display: flex;
-    justify-content: center;
-}
-.navbar{
-    position: sticky;
-    top: 0;
-    background-color: #99ffa2;
-    display: flex; 
-    justify-content: start;
-    padding-left: 12px;
-    padding-right: 12px;
+/*COMPUTADORA*/
+    body{background-color: greenyellow;
+    margin: 0px;
+    }
     
-}
 
-.contenedor-1{
-    background-color: #00ff80;
-}
+    .container {  
+        max-width: 100%;
+        display: grid;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header header"
+          "googlemaps googlemaps googlemaps"
+          "carousel carousel carousel"
+          ". ubicacion .";
+      }
+      
+      .header { grid-area: header; }
+      
+      .googlemaps { grid-area: googlemaps; }
+      
+      .ubicacion { grid-area: ubicacion; }
 
-.titulo{
-    font-family: 'Xanh Mono', monospace;
-    color: white;
-    font-size: 40px;
-    margin-top: auto;
-}
+      .carousel { grid-area: carousel; }
+      
+    .btn{
+        background-color: #6bf170; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        height: 100%;
 
-.parrafo-comun{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    font-size: 3vw;
-    background-color: blue;
-}
+    }
+    .btn a{
+        text-decoration: none;
+        color:white
+    }
+    .botones_header{
+        margin-inline-start: auto;
+    }
+    
+    .googlemaps{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar{
+        position: sticky;
+        top: 0;
+        background-color: #99ffa2;
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        
+        
+    }
 
-/*IMAGENES*/
-#imagen_3{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
-  }
-#imagen_4{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
+    .navbar p{
+        display: inline;
+        margin-right: 1000px;
+    }
+    
+    #Bloque_registro{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .titulo{
+        font-family: 'Xanh Mono', monospace;
+        color: white;
+        font-size: 40px;
+        margin-top: auto;
+    }
+    
+    .parrafo-comun{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        font-size: 3vw;
+        background-color: blue;
+    }
+    .ubicacion{
+        display: flex;
+        justify-content: center;
+    }
+    /*IMAGENES*/
+    
+    .carousel-item img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%; 
+        height: 50vw;
+    } 
+
+    /*celular*/
+    @media only screen and (max-width: 991px) {
+    
+        .container {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header header header"
+              "googlemaps googlemaps googlemaps"
+              "carousel carousel carousel"
+              ". ubicacion .";
+          }
+          
+          .header { grid-area: header; }
+          
+          .googlemaps { grid-area: googlemaps; }
+          
+          .ubicacion { grid-area: ubicacion; }
+    
+          .carousel { grid-area: carousel; }
+          
+    
+        .navbar{
+            display: flex; 
+            justify-content:end;
+            width: 100%;
+            
+        }
+    
+        
+        .contenedor-1{
+            background-color: #00ff80;
+        }
+        
+        
+    
+      }
 
 
-  }
+
+
+
 
 
   /*placeholder*/
