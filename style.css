@@ -3,7 +3,7 @@
 /*{border: 1px solid white;}*/
 
 /*COMPUTADORA*/
-    body{background-color: greenyellow;
+    body{background-color: white;
     margin: 0px;
     }
     
@@ -11,15 +11,20 @@
     .container {  
         max-width: 100%;
         display: grid;
-        padding: 20px;
+        padding: 0px;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
-        grid-template-areas:
-          "header header header"
-          "googlemaps googlemaps googlemaps"
-          "carousel carousel carousel"
-          ". ubicacion .";
+        grid-template-areas: 
+        "header header header"
+        "carousel carousel carousel"
+        "carousel carousel carousel"
+        ". mision ."
+        "googlemaps googlemaps googlemaps"
+        ". ubicacion ."
+        "cardpos1 cardpos2 cardpos3"
+        ". . ."
+        ". footer ."; 
       }
       
       .header { grid-area: header; }
@@ -29,17 +34,22 @@
       .ubicacion { grid-area: ubicacion; }
 
       .carousel { grid-area: carousel; }
-      
-    .btn{
-        background-color: #6bf170; 
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 16px;
-        height: 100%;
 
+      .cardpos1 {grid-area: cardpos1;}
+      
+      .cardpos2 {grid-area: cardpos2;}
+
+      .cardpos3 {grid-area: cardpos3;}
+
+      .mision {grid-area: mision;}
+      
+      .footer {grid-area: footer;}
+
+    .container-fluid{
+        background-color: #7fff84;
+        height: 80px;  
     }
+
     .btn a{
         text-decoration: none;
         color:white
@@ -52,17 +62,34 @@
         display: flex;
         justify-content: center;
     }
+
+    /* HEADER*/
+    .btn{
+        background-color: #7fff84; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        height: 100%;
+
+    }
+    .navbar-toggler{
+        background-color: white;
+    }
+
     .navbar{
-        position: sticky;
         top: 0;
         background-color: #99ffa2;
         width: 100%;
-        padding-left: 12px;
-        padding-right: 12px;
-        
-        
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
+    
+    .navbar-brand{
+        color:white
+    }
     .navbar p{
         display: inline;
         margin-right: 1000px;
@@ -86,11 +113,21 @@
         font-size: 3vw;
         background-color: blue;
     }
+    /*UBICACION*/
+    .ubicacion label{
+        font-family:font-family, 'Roboto', sans-serif;
+    }
+    
     .ubicacion{
         display: flex;
         justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
-    /*IMAGENES*/
+    .ubicacion form{
+        justify-content: center;
+    }
+    /*IMAGENES CAROUSEL*/
     
     .carousel-item img {
         display: block;
@@ -99,21 +136,81 @@
         width: 100%; 
         height: 50vw;
     } 
+    .carousel{
+        z-index: 0;
+    }
+    
+    /*cartas*/
 
+    .cardpos1, .cardpos2, .cardpos3{
+        margin: 10px;
+        margin-bottom:100px;
+        
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .card1{
+        color: black;
+        width: 100%;
+        border: 2px black;
+        
+    }       
+    .card2{
+        color: black;
+        width: 100%;
+
+    }
+    .card3{
+        color: black;
+        width: 100%;
+    }
+
+    .card-img-top{
+        height: 400px;
+    }
+
+    .mision{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .header{
+        position: sticky;
+        z-index: 1;
+    }
     /*celular*/
+
+    /*--------------------------INICIAR SESION-------------------------------------------------*/
+
+    
+    
+    
+    
     @media only screen and (max-width: 991px) {
     
-        .container {  display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+        
+        .container {  
+            max-width: 100%;
+            display: grid;
+            padding: 0px;
+            grid-template-columns: 1fr 90% 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
-            grid-template-areas:
-              "header header header"
-              "googlemaps googlemaps googlemaps"
-              "carousel carousel carousel"
-              ". ubicacion .";
+            grid-template-areas: 
+            "header header header"
+            "carousel carousel carousel"
+            "carousel carousel carousel"
+            ". mision ."
+            "googlemaps googlemaps googlemaps"
+            ". ubicacion ."
+            ". cardpos1 ."
+            ". cardpos2 ."
+            ". cardpos3 ."; 
           }
-          
           .header { grid-area: header; }
           
           .googlemaps { grid-area: googlemaps; }
@@ -121,24 +218,27 @@
           .ubicacion { grid-area: ubicacion; }
     
           .carousel { grid-area: carousel; }
-          
     
-        .navbar{
-            display: flex; 
-            justify-content:end;
-            width: 100%;
-            
-        }
-    
-        
-        .contenedor-1{
-            background-color: #00ff80;
-        }
-        
-        
-    
-      }
+          .card {grid-area: card;}
 
+          .mision {grid-area: mision;}
+    
+      
+    
+    .navbar{
+        display: flex; 
+        justify-content:end;
+        width: 100%;
+        
+    }
+
+    
+    .contenedor-1{
+        background-color: #00ff80;
+    }
+
+}
+      
 
 
 
