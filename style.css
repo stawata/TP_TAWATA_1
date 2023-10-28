@@ -184,9 +184,20 @@
     }
 
     .footer{
+        position: fixed;
         display: flex;
         justify-content: center;
+        right: 20px;
+        bottom: 20px;
+        z-index: 20;
     }
+    .insta img{
+        border-radius: 50%;
+    }
+    .wpp img{
+        border-radius: 50%;
+    }
+
 
     /*celular*/
 
@@ -248,11 +259,21 @@
     .contenedor-1{
         background-color: #00ff80;
     }
+
     .footer{
+        position: fixed;
         display: flex;
         justify-content: center;
+        right: 20px;
+        bottom: 20px;
+        z-index: 20;
     }
-
+    .insta img{
+        border-radius: 50%;
+    }
+    .wpp img{
+        border-radius: 50%;
+    }
 }
       
 
