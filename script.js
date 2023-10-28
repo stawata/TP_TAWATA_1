@@ -1,3 +1,4 @@
+/*
 console.log("Hola mundo")
 
 let a = 1;
@@ -8,7 +9,7 @@ a = 5;
 let nombre = "Santiago";
 
 let profesoractibvo = True;
-
+*/
 /*number = integrer y float
 string = cadena de caracteres
 boolean = true or false
@@ -134,3 +135,41 @@ edad = prompt()
 parseInt(prompt()) te lo convirte a number
  parsefloat(prompt("ingrese numero float"))
 */
+
+/*en html 
+<p id ="parrafo"></p>*/
+
+/*
+let parrafoHTML = document.getElementById("parrafo");
+
+parrafoHTML.innerText = "Hola mundo"
+
+let nombre = prompt("Ingrese nombre")
+document.getElementById("titular").innerHTML = "Hola "+ nombre
+
+*/
+
+/* elemtnt.addEventlistener("click", myfuncition)*/
+
+let boton_iniciar_sesion = document.getElementById("inicar_botonId");
+
+
+
+let natacion = document.getElementById("natacion.id");
+let futbol = document.getElementById("futbol.id");
+let paddle = document.getElementById("paddle.id");
+let reservasHTML = document.getElementById("reservas.id");
+console.log(reservasHTML)
+
+natacion.addEventListener("click", imprimirConsola);
+
+
+function imprimirConsola() {
+    let horario = document.getElementById("horario.id").value;
+    let NOMBRE_APELLIDO = document.getElementById("RapellidoNombreId").value;
+    reservasHTML.innerHTML += `<br> Nombre: ${NOMBRE_APELLIDO}, Horario reservado ${horario}, deporte: Natacion`
+  }
+
+
+
+

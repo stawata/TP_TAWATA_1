@@ -52,13 +52,31 @@
                             <input type="password" class="form-control" id="RpasswordId">
                         </div>
                     </form>
-                    <div class="col-lg-7 col-md-8 col-sm-8 col-12">
+                    <div class="btn-group">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        DEPORTES
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" id="natacion.id">NATACION</a></li>
+                        <li><a class="dropdown-item" id="futbol.id">futbol</a></li>
+                        <li><a class="dropdown-item" id="paddle.id">Paddle</a></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="mb-2">
+                      <label for="exampleInputPassword1" class="form-label">Horario</label>
+                      <input type="password" class="form-control" id="horario.id">
+                  </div>
+                  <div class="col-lg-7 col-md-8 col-sm-8 col-12">
                         <button type="button" style="width: 100%; margin-top: 1rem;background-color: #7fff84; color: white;" class="btn btn-personal"
-                            id="registrarbotonId" >INICIAR SESION</button>
+                            id="inicar_botonId" >Reservar</button>
                     </div>
                 </div>
+                <p id = reservas.id>RESERVAS ESTABLECIDAS</p>
         </div>
       </div>
- 
+
+
 </body>
+<script src="../script.js"></script>
 </html>
