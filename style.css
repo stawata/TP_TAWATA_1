@@ -240,7 +240,10 @@
         width: 100%;
         
     }
-
+    .container-fluid{
+        background-color: #7fff84;
+        height: 12vw;  
+    }
     
     .contenedor-1{
         background-color: #00ff80;
