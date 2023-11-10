@@ -23,7 +23,7 @@
         "googlemaps googlemaps googlemaps"
         ". ubicacion ."
         "cardpos1 cardpos2 cardpos3"
-        ". . ."
+        ". comentarios ."
         ". footer ."; 
       }
       
@@ -44,6 +44,8 @@
       .mision {grid-area: mision;}
       
       .footer {grid-area: footer;}
+
+      .comentarios{ grid-area: comentarios;}
 
     .container-fluid{
         background-color: #7fff84;
@@ -183,6 +185,8 @@
         z-index: 1;
     }
 
+    /*FOOTER*/
+
     .footer{
         position: fixed;
         display: flex;
@@ -198,6 +202,18 @@
         border-radius: 50%;
     }
 
+
+    /*COMENTARIOS*/
+    .comentarios{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .btn{
+        height: 25%;
+        margin-top: 10px;
+    }
 
     /*celular*/
 
@@ -227,7 +243,8 @@
             ". cardpos1 ."
             ". cardpos2 ."
             ". cardpos3 ."
-            ". footer ."; 
+            ". footer ."
+            ".comentarios."; 
           }
           .header { grid-area: header; }
           
@@ -242,7 +259,8 @@
           .mision {grid-area: mision;}
 
           .footer {grid-area: footer;}
-    
+          
+          .comentarios{ grid-area: comentarios;}
       
     
     .navbar{

@@ -38,7 +38,7 @@ function nombre_funcion(){
 console.log()
 clase.metodo()
 cont ARRAY = []
-ARRAY.push(1)// Agrega un valor al final de array
+ARRAY.push(1)// Agrega un elemento al final de array
 consolo.log(ARRAY[])
 
 ARRAY.unshift(2) // lo agrega al principio
@@ -154,3 +154,53 @@ document.getElementById("titular").innerHTML = "Hola "+ nombre
 */
 
 /* elemtnt.addEventlistener("click", myfuncition)*/
+
+
+let x = 0;
+do (x<10){
+    console.log(x)
+    x+=1
+}while(x<-1)
+
+
+for(let i=0, i<10, i++){
+    console.log(i)
+}
+
+const estudiantes = ["Santiago", "Martin", "Lautaro"]
+
+for (let i = 0, i < estudiantes.lenght, i+1){
+    estudiantes[i] = estudaintes[i]+ "@itba.edu.ar"
+}
+
+const arraydecosas=[]
+
+function agregarvalor(valor){
+    #input del texto pusheado a un array#
+    arraydecosas.push(valor)
+
+}
+
+indexof()#esta funcion te devuelve el valor de la variable que queres
+function encontrarelemento(elementos){
+    for (let i = 0, i < arraydecosas.lenght , i++){
+        if (arraydecosas[i]== elementosaencontrar){
+            return i
+        }
+    }
+}
+
+function invertir(arrayinvertir){
+    let arrayinvertido = []
+    for (let i = 0, i <= arrayinvertir.lenght , i++){
+        let pivot = arrayinvertir[i]
+        arrayinvertido.push(pivot)
+    }
+
+}
+
+
+# let dato =document.getElementByid("input").value#
+# localstorage.setItem("nombre",0) #
+#localstorage.getItem("nombre")#
+#formsubmit#
