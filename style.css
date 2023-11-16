@@ -215,6 +215,14 @@
         margin-top: 10px;
     }
 
+    .card{
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .form-control{
+        width: 50%;
+    }
     /*celular*/
 
     /*--------------------------INICIAR SESION-------------------------------------------------*/
@@ -291,6 +299,17 @@
     }
     .wpp img{
         border-radius: 50%;
+    }
+    .card{
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .form-control{
+        width: 50%;
+    }
+    #Imagen-comentarios{
+        width: 50%;
     }
 }
       
